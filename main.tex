@@ -1,0 +1,57 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Mike Pierce (mapierce271@gmail.com)
+%   The Enchiridion, Epictetus, translated by Thomas Wentworth Higginson
+%   main.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+    \documentclass[12pt]{article}
+    \usepackage{fourier}
+    \usepackage[margin=100pt,top=40pt,bottom=20pt]{geometry}
+    \usepackage{setspace}
+    \usepackage{forloop}
+    \usepackage{fmtcount}
+    \usepackage[bookmarks]{hyperref}
+    \hypersetup{%
+         pdfauthor={Mike Pierce}%
+        ,pdftitle={The Enchiridion - translated by Thomas Wentworth Higginson}%
+        ,pdfsubject={Epictetus' The Enchiridion}%
+        ,pdfproducer={LaTeX using hyperref}%
+        ,pdfcreator={pdfLaTeX from TeXLive}%
+        ,pdfkeywords={Epictetus,Enchiridion,Higginson,Stoic,Stoicism,Greek}%
+        ,pdfpagemode=UseOutlines%
+    }
+    \widowpenalty7500
+    \clubpenalty7500
+    \setlength{\parskip}{10pt plus 1pt minus 1pt}
+    \setlength{\parindent}{0pt}
+    \linespread{1.167}
+    \frenchspacing
+    \title{\small{Epictetus'}\\\Huge{The Enchiridion}}
+    \author{translation by\\Thomas Wentworth Higginson}
+    \date{}
+
+    % TODO:
+    %  - Better cover/title/maketitle
+    %  - Different translations / ways to easily switch in the Makefile
+    %  - Change pagesize for tablet (to a book size?)
+
+
+\begin{document}
+
+    \maketitle
+
+    \newcounter{chap}
+    \forloop{chap}{1}{\value{chap}<52}{%
+        \storeNumberstring{ch}{chap}%
+        \section*{\FMCuse{ch}}%
+        \addcontentsline{toc}{section}{\FMCuse{ch}}%
+        \input{chapter/\arabic{chap}.tex}%
+    }
+
+\end{document}
+
+
+
