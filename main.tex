@@ -1,7 +1,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Mike Pierce (mapierce271@gmail.com)
-%   The Enchiridion, Epictetus, translated by Thomas Wentworth Higginson
+%   The Enchiridion of Epictetus
 %   main.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -16,11 +16,11 @@
     \usepackage[bookmarks]{hyperref}
     \hypersetup{%
          pdfauthor={Mike Pierce}%
-        ,pdftitle={The Enchiridion - translated by Thomas Wentworth Higginson}%
+        ,pdftitle={The Enchiridion - translated by Carter}% THIS LINE
         ,pdfsubject={Epictetus' The Enchiridion}%
         ,pdfproducer={LaTeX using hyperref}%
         ,pdfcreator={pdfLaTeX from TeXLive}%
-        ,pdfkeywords={Epictetus,Enchiridion,Higginson,Stoic,Stoicism,Greek}%
+        ,pdfkeywords={Epictetus,Enchiridion,Carter,Stoic,Stoicism,Greek}% THIS LINE
         ,pdfpagemode=UseOutlines%
     }
     \widowpenalty7500
@@ -30,7 +30,8 @@
     \linespread{1.167}
     \frenchspacing
     \title{\small{Epictetus'}\\\Huge{The Enchiridion}}
-    \author{translation by\\Thomas Wentworth Higginson}
+    %\author{translation by\\Thomas Wentworth Higginson} % THIS LINE
+    \author{translation by Elizabeth Carter} % THIS LINE
     \date{}
 
 
@@ -40,11 +41,12 @@
     \maketitle
 
     \newcounter{chap}
-    \forloop{chap}{1}{\value{chap}<52}{%
+    \forloop{chap}{1}{\value{chap}<53}{%
         \storeNumberstring{ch}{chap}%
         \section*{\FMCuse{ch}}%
         \addcontentsline{toc}{section}{\FMCuse{ch}}%
-        \input{chapter/\arabic{chap}.tex}%
+        %\input{translation/higginson/\arabic{chap}.tex}% THIS LINE
+        \input{translation/carter/\arabic{chap}.tex}% THIS LINE
     }
 
 \end{document}
