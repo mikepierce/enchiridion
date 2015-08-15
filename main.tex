@@ -9,18 +9,22 @@
 
     \documentclass[12pt]{article}
     \usepackage{fourier}
-    \usepackage[margin=100pt,top=40pt,bottom=20pt]{geometry}
+    \usepackage[%
+         margin=1in%
+        ,paperwidth=6in%
+        ,paperheight=9in%
+    ]{geometry}
     \usepackage{setspace}
     \usepackage{forloop}
     \usepackage{fmtcount}
     \usepackage[bookmarks]{hyperref}
     \hypersetup{%
          pdfauthor={Mike Pierce}%
-        ,pdftitle={The Enchiridion - translated by Carter}% THIS LINE
+        ,pdftitle={The Enchiridion - Carter}%
         ,pdfsubject={Epictetus' The Enchiridion}%
         ,pdfproducer={LaTeX using hyperref}%
         ,pdfcreator={pdfLaTeX from TeXLive}%
-        ,pdfkeywords={Epictetus,Enchiridion,Carter,Stoic,Stoicism,Greek}% THIS LINE
+        ,pdfkeywords={Epictetus,Enchiridion,Carter,Stoic,Stoicism,Greek}%
         ,pdfpagemode=UseOutlines%
     }
     \widowpenalty7500
@@ -30,8 +34,7 @@
     \linespread{1.167}
     \frenchspacing
     \title{\small{Epictetus'}\\\Huge{The Enchiridion}}
-    %\author{translation by\\Thomas Wentworth Higginson} % THIS LINE
-    \author{translation by Elizabeth Carter} % THIS LINE
+    \author{translation by Elizabeth Carter}
     \date{}
 
 
@@ -45,8 +48,7 @@
         \storeNumberstring{ch}{chap}%
         \section*{\FMCuse{ch}}%
         \addcontentsline{toc}{section}{\FMCuse{ch}}%
-        %\input{translation/higginson/\arabic{chap}.tex}% THIS LINE
-        \input{translation/carter/\arabic{chap}.tex}% THIS LINE
+        \input{translation/carter/\arabic{chap}.tex}%
     }
 
 \end{document}
