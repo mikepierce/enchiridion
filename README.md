@@ -2,7 +2,12 @@
 # The Enchiridion of Epictetus
 
 A handbook of basic practices of stoicism typeset in LaTeX.
-This current version was translated by Elizabeth Carter.
+A notable feature of this project is that the translation of the Enchiridion
+can be chosen at compile time using GNU Make. 
+For example, running `make carter` will compile using Carter's translation.
+Currently only the translations of Elizabeth Carter and Thomas Wentworth Higginson
+are supported. Carter's translation is the default.
+
 This projects exists because I wanted a digital copy of the Enchiridion
 to read on my tablet.
 
@@ -37,8 +42,8 @@ to read on my tablet.
 
 ### 16 Aug 2015
  - Added a feature to choose the translation at compile time with `make`.
-   For example, using `make higginson` will compile Higginson's translation.
-   The default translation is Carter's.
+   For example, compiling with the command `make higginson` 
+   will compile Higginson's translation. The default translation is Carter's.
 
 ### 14 Aug 2015
  - Changed page dimensions to 6 by 9 inches for tablet.
