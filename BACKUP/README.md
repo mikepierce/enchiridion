@@ -10,13 +10,11 @@ to read on my tablet.
 
 # ToDo
  
- - Do something about the cause of the `Overfull \hbox` errors. 
-   (play with the value of `\tolerance` and some other stuff)
- - Justify the plain text in the files for the chapters. (because why not?)
+ - Create a book cover and/or title page.
  - Make a few changes to Carter's translation. There are too many commas 
    and a few other wonky things.
- - Create a book cover and/or title page.
- - Add more translations.
+ - Add more translations and make compiling different translations
+   a feature of the Makefile.
 
 
 
@@ -35,10 +33,7 @@ to read on my tablet.
 
 # Change Log
 
-### 16 Aug 2015
- - Added a feature to choose the translation at compile time with `make`.
-   For example, using `make higginson` will compile Higginson's translation.
-   The default translation is Carter's.
+### .. Aug 2015
 
 ### 14 Aug 2015
  - Changed page dimensions to 6 by 9 inches for tablet.

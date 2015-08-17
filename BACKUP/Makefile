@@ -16,19 +16,17 @@ VIEWER = mupdf
 
 
 
-all : carter
+all : $(JOB).pdf
 
-carter : carter-sed $(JOB).pdf
+carter : carter-sed all
 
-higginson : higginson-sed $(JOB).pdf
+higginson : higginson-sed all
 
 carter-sed :
-	sed -e 's/AUTHOR_FULL/Elizabeth Carter/g' \
-		-e 's/AUTHOR_LAST/Carter/g' <$(MAIN).tex >$(POST).tex
+	sed -e 's/AUTHORFULL/Elizabeth Carter' -e 's/AUTHOR/Carter' <$(MAIN).tex >$(POST).tex
 
 higginson-sed :
-	sed -e 's/AUTHOR_FULL/Thomas Wentworth Higginson/g' \
-		-e 's/AUTHOR_LAST/Higginson/g' <$(MAIN).tex >$(POST).tex
+	sed -e 's/AUTHORFULL/Thomas Wentworth Higginson' -e 's/AUTHOR/Higginson' <$(MAIN).tex >$(POST).tex
 
 $(JOB).pdf : $(OBJS)
 	$(COMPILER) $(OPTIONS) $(POST).tex
@@ -38,7 +36,10 @@ $(JOB).pdf : $(OBJS)
 	rm -f $(JOB).log
 	rm -f $(JOB).out
 
-.PHONY: clean
+.PHONY: open clean
+
+open : all
+	$(VIEWER) $(JOB).pdf &
 
 clean :
 	rm -f $(JOB).aux

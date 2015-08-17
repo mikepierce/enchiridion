@@ -7,7 +7,7 @@
 
 
 
-    \documentclass[12pt,draft]{article}
+    \documentclass[12pt]{article}
     \usepackage{fourier}
     \usepackage[%
          margin=1in%
@@ -20,22 +20,21 @@
     \usepackage[bookmarks]{hyperref}
     \hypersetup{%
          pdfauthor={Mike Pierce}%
-        ,pdftitle={The Enchiridion - AUTHOR_LAST}%
+        ,pdftitle={The Enchiridion - AUTHOR}%
         ,pdfsubject={Epictetus' The Enchiridion}%
         ,pdfproducer={LaTeX using hyperref}%
         ,pdfcreator={pdfLaTeX from TeXLive}%
-        ,pdfkeywords={Epictetus,Enchiridion,AUTHOR_LAST,Stoic,Stoicism}%
+        ,pdfkeywords={Epictetus,Enchiridion,AUTHOR,Stoic,Stoicism,Greek}%
         ,pdfpagemode=UseOutlines%
     }
     \widowpenalty7500
     \clubpenalty7500
-    \tolerance=1000
     \setlength{\parskip}{10pt plus 1pt minus 1pt}
     \setlength{\parindent}{0pt}
     \linespread{1.167}
     \frenchspacing
     \title{\small{Epictetus'}\\\Huge{The Enchiridion}}
-    \author{translation by AUTHOR_FULL}
+    \author{translation by AUTHORFULL}
     \date{}
 
 
@@ -49,7 +48,7 @@
         \storeNumberstring{ch}{chap}%
         \section*{\FMCuse{ch}}%
         \addcontentsline{toc}{section}{\FMCuse{ch}}%
-        \input{translation/AUTHOR_LAST/\arabic{chap}.tex}%
+        \input{translation/AUTHOR/\arabic{chap}.tex}%
     }
 
 \end{document}
