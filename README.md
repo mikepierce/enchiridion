@@ -15,8 +15,7 @@ to read on my tablet.
 
 # ToDo
  
- - Do something about the cause of the `Overfull \hbox` errors. 
-   (play with the value of `\tolerance` and some other stuff)
+ - Lessen the spacing the `quote` environment. (maybe?)
  - Justify the plain text in the files for the chapters. (because why not?)
  - Make a few changes to Carter's translation. There are too many commas 
    and a few other wonky things.
@@ -39,6 +38,10 @@ to read on my tablet.
 
 
 # Change Log
+
+### 18 Aug 2015
+ - Dealt with the `Overfull \hbox` issues by changing the left 
+   and right margins to 0.8 inches and by setting `\tolerance=500`.
 
 ### 16 Aug 2015
  - Added a feature to choose the translation at compile time with `make`.
