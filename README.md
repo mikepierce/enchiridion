@@ -15,12 +15,9 @@ to read on my tablet.
 
 # ToDo
  
- - Lessen the spacing the `quote` environment. (maybe?)
- - Justify the plain text in the files for the chapters. (because why not?)
- - Make a few changes to Carter's translation. There are too many commas 
-   and a few other wonky things.
- - Create a book cover and/or title page.
  - Add more translations.
+ - Expand the `README.md`.
+ - Create a book cover and/or title page.
 
 
 
@@ -38,6 +35,10 @@ to read on my tablet.
 
 
 # Change Log
+
+### 23 Aug 2015
+ - Renewed the `quote` environment.
+ - Full-justified the plain text in the content files using `par 79j`.
 
 ### 18 Aug 2015
  - Dealt with the `Overfull \hbox` issues by changing the left 
