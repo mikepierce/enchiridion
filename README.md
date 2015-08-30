@@ -5,7 +5,7 @@
   compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
 
   <p align="right">
-    [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
+    - [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
   </p>
 
 This projects presents the Enchiridion set in LaTeX as a pdf ebook.
