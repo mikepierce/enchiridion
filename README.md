@@ -4,7 +4,9 @@
 > The Enchiridion or Manual of Epictetus ... is a short manual of Stoic ethical advice 
   compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
 
-  [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
+  <p align="right">
+    [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
+  </p>
 
 This projects presents the Enchiridion set in LaTeX as a pdf ebook.
 
