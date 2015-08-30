@@ -3,7 +3,8 @@
 
 > The Enchiridion or Manual of Epictetus ... is a short manual of Stoic ethical advice 
   compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
-  &nbsp;&nbsp;&nbsp; - [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
+
+  [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
 
 This projects presents the Enchiridion set in LaTeX as a pdf ebook.
 
@@ -18,10 +19,8 @@ along with a link to a source for each:
  - [Elizabeth Carter](https://archive.org/details/enchiridion_librivox)
  - [Thomas Wentworth Higginson](http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0557.tlg002.perseus-eng2:1)
  - [P.E. Matheson](http://www.sacred-texts.com/cla/dep/dep102.htm)
- <!---
  - [George Long](http://www.ptypes.com/enchiridion.html)
  - [Thomas William Rolleston](http://www.letsreadgreek.com/epictetus/rolleston.htm)
- -->
 
 
 
@@ -29,15 +28,16 @@ along with a link to a source for each:
  
  - Add more translations.
  - Proofread and correct existing translations.
- - Add Makefile rule to produce all translations.
  - Create a book cover, or at least a title page.
 
 
 
 # Change Log
 
-### .. Aug 2015
- - Fixed a few typos in Carter (up to ch24)
+### 30 Aug 2015
+ - Added the `make todos` option to make a copy of each translation
+   in the `all-versions` directory.
+ - Fixed a few typos in Carter.
  - Added translation by Matheson (still needs to be cleaned up).
  - Expanded and cleaned up the README.
 
