@@ -1,40 +1,45 @@
 
 # The Enchiridion of Epictetus
 
-A handbook of basic practices of stoicism typeset in LaTeX.
-A notable feature of this project is that the translation of the Enchiridion
-can be chosen at compile time using GNU Make. 
-For example, running `make carter` will compile using Carter's translation.
-Currently only the translations of Elizabeth Carter and Thomas Wentworth Higginson
-are supported. Carter's translation is the default.
+> The Enchiridion or Manual of Epictetus ... is a short manual of Stoic ethical advice 
+  compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
+  &nbsp;&nbsp;&nbsp; - [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)
 
-This projects exists because I wanted a digital copy of the Enchiridion
-to read on my tablet.
+This projects presents the Enchiridion set in LaTeX as a pdf ebook.
+
+A notable feature of this project is that the translation of the Enchiridion
+can be chosen at compile time by running `make <translator's last name>`.
+For example, compiling with `make higginson` will compile 
+Thomas Wentworth Higginson's translation of the Enchiridion.
+If no translator is specified with `make` then Carter's translation is used.
+The following is a list of the currently supported translations
+along with a link to a source for each: 
+
+ - [Elizabeth Carter](https://archive.org/details/enchiridion_librivox)
+ - [Thomas Wentworth Higginson](http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0557.tlg002.perseus-eng2:1)
+ - [P.E. Matheson](http://www.sacred-texts.com/cla/dep/dep102.htm)
+ <!---
+ - [George Long](http://www.ptypes.com/enchiridion.html)
+ - [Thomas William Rolleston](http://www.letsreadgreek.com/epictetus/rolleston.htm)
+ -->
 
 
 
 # ToDo
  
  - Add more translations.
- - Expand the `README.md`.
- - Create a book cover and/or title page.
-
-
-
-# Sources for Various Translations
- 
- - [Elizabeth Carter](http://classics.mit.edu/Epictetus/epicench.html)
- - [Thomas Wentworth Higginson](http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0557.tlg002.perseus-eng2:1)
- - [Matheson](http://www.sacred-texts.com/cla/dep/dep102.htm)
- - [another Matheson](http://www.letsreadgreek.com/epictetus/mattheson.htm)
- - [George Long](http://www.ptypes.com/enchiridion.html)
- - [another George Long](https://en.wikisource.org/wiki/Enchiridion)
- - [Stephen Walton](http://www.ideonautics.com/manual2.htm)
- - [Rolleston](http://www.letsreadgreek.com/epictetus/rolleston.htm)
+ - Proofread and correct existing translations.
+ - Add Makefile rule to produce all translations.
+ - Create a book cover, or at least a title page.
 
 
 
 # Change Log
+
+### .. Aug 2015
+ - Fixed a few typos in Carter (up to ch24)
+ - Added translation by Matheson (still needs to be cleaned up).
+ - Expanded and cleaned up the README.
 
 ### 23 Aug 2015
  - Renewed the `quote` environment.
@@ -46,8 +51,6 @@ to read on my tablet.
 
 ### 16 Aug 2015
  - Added a feature to choose the translation at compile time with `make`.
-   For example, compiling with the command `make higginson` 
-   will compile Higginson's translation. The default translation is Carter's.
 
 ### 14 Aug 2015
  - Changed page dimensions to 6 by 9 inches for tablet.
