@@ -75,7 +75,7 @@ rolleston : rolleston-sed $(JOB).pdf
 
 rolleston-sed :
 	touch $(MAIN).tex
-	sed -e 's/AUTHOR_FULL/T. W. Rolleston/g' \
+	sed -e 's/AUTHOR_FULL/Thomas William Rolleston/g' \
 		-e 's/AUTHOR_LAST/Rolleston/g' <$(MAIN).tex >$(POST).tex
 
 
