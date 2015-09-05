@@ -28,13 +28,17 @@ along with a link to a source for each:
 
 # ToDo
  
- - Add more translations.
- - Proofread and correct existing translations.
+ - Have names in README link to files, with a [source] thing next to them.
  - Create a book cover, or at least a title page.
 
 
 
 # Change Log
+
+###  5 Sep 2015
+ - Proofread Matheson and made a few minor edits.
+ - Added and proofread Long's translation.
+ - Added and proofread Rolleston's translation.
 
 ###  1 Sep 2015
  - Proofread Higginson and made a few minor edits.

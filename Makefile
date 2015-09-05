@@ -27,6 +27,10 @@ todos: clean
 	mv $(JOB).pdf $(BOOKSDIR)/$(JOB)-higginson.pdf
 	make matheson
 	mv $(JOB).pdf $(BOOKSDIR)/$(JOB)-matheson.pdf
+	make long
+	mv $(JOB).pdf $(BOOKSDIR)/$(JOB)-long.pdf
+	make rolleston
+	mv $(JOB).pdf $(BOOKSDIR)/$(JOB)-rolleston.pdf
 	make clean
 
 
@@ -55,6 +59,24 @@ matheson-sed :
 	touch $(MAIN).tex
 	sed -e 's/AUTHOR_FULL/P. E. Matheson/g' \
 		-e 's/AUTHOR_LAST/Matheson/g' <$(MAIN).tex >$(POST).tex
+
+
+
+long : long-sed $(JOB).pdf
+
+long-sed :
+	touch $(MAIN).tex
+	sed -e 's/AUTHOR_FULL/George Long/g' \
+		-e 's/AUTHOR_LAST/Long/g' <$(MAIN).tex >$(POST).tex
+
+
+
+rolleston : rolleston-sed $(JOB).pdf
+
+rolleston-sed :
+	touch $(MAIN).tex
+	sed -e 's/AUTHOR_FULL/T. W. Rolleston/g' \
+		-e 's/AUTHOR_LAST/Rolleston/g' <$(MAIN).tex >$(POST).tex
 
 
 
