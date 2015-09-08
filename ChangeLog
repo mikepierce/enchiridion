@@ -1,0 +1,37 @@
+
+07 Sep 2015
+    - Added cover page.
+    - Added title page.
+
+05 Sep 2015
+    - Proofread Matheson and made a few minor edits.
+    - Added and proofread Long's translation.
+    - Added and proofread Rolleston's translation.
+    - Updated README to have links to the actual PDFs.
+
+01 Sep 2015
+    - Proofread Higginson and made a few minor edits.
+
+30 Aug 2015
+    - Added the `make todos` option to make a copy of each translation in the `all-versions` directory.
+    - Fixed a few typos in Carter.
+    - Added translation by Matheson (still needs to be cleaned up).
+    - Expanded and cleaned up the README.
+
+23 Aug 2015
+    - Renewed the `quote` environment.
+    - Full-justified the plain text in the content files using `par 79j`.
+
+18 Aug 2015
+    - Dealt with the `Overfull \hbox` issues by changing the left and right margins to 0.8 inches and by setting `\tolerance=500`.
+
+16 Aug 2015
+    - Added a feature to choose the translation at compile time with `make`.
+
+14 Aug 2015
+    - Changed page dimensions to 6 by 9 inches for tablet.
+    - Added Elizabeth Carter's translation and made it the default.
+    - Added GNU GPLv2 License.
+
+
+

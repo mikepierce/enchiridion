@@ -11,11 +11,16 @@
     \usepackage{fourier}
     \usepackage[%
          margin=1in%
-        ,left=.8in
-        ,right=.8in
+        ,left=.8in%
+        ,right=.8in%
         ,paperwidth=6in%
         ,paperheight=9in%
     ]{geometry}
+    \usepackage{wallpaper}
+    \usepackage{xcolor}
+        \definecolor{LinkBlue}{HTML}{1122BB}
+    \usepackage{datetime}
+        \newdateformat{dmy}{\THEDAY~\shortmonthname[\THEMONTH]~\THEYEAR}
     \usepackage{setspace}
     \usepackage{forloop}
     \usepackage{fmtcount}
@@ -23,11 +28,12 @@
     \usepackage[bookmarks]{hyperref}
     \hypersetup{%
          pdfauthor={Mike Pierce}%
-        ,pdftitle={The Enchiridion - AUTHOR_LAST}%
-        ,pdfsubject={Epictetus' The Enchiridion}%
+        ,pdftitle={The Enchiridion - AUTHORLAST}%
+        ,pdfsubject={The Enchiridion of Epictetus}%
         ,pdfproducer={LaTeX using hyperref}%
         ,pdfcreator={pdfLaTeX from TeXLive}%
-        ,pdfkeywords={Epictetus,Enchiridion,AUTHOR_LAST,Stoic,Stoicism}%
+        ,pdfkeywords={Epictetus,Enchiridion,AUTHORLAST,Stoic,Stoicism}%
+        ,hidelinks=true%
         ,pdfpagemode=UseOutlines%
     }
     \widowpenalty7500
@@ -37,24 +43,32 @@
     \setlength{\parindent}{0pt}
     \linespread{1.167}
     \frenchspacing
-    \title{\small{Epictetus'}\\\Huge{The Enchiridion}}
-    \author{translation by AUTHOR_FULL}
-    \date{}
 
+    \newcommand{\AuthorFull}{AUTHORFULL}
+    \newcommand{\email}{%
+        \href{mailto:mapierce271@gmail.com}%
+             {\textcolor{LinkBlue}{mapierce271@gmail.com}}%
+    }
+    \newcommand{\github}{%
+        \href{https://github.com/mapierce271/Enchiridion}%
+             {\textcolor{LinkBlue}{github.com/mapierce271/Enchiridion}}%
+    }
     \renewenvironment{quote}{\small\list{}{\rightmargin\leftmargin}\item\relax}
 
 
 
 \begin{document}
 
-    \maketitle
+    \include{coverpage}
+
+    \include{titlepage}
 
     \newcounter{chap}
     \forloop{chap}{1}{\value{chap}<53}{%
         \storeNumberstring{ch}{chap}%
         \section*{\FMCuse{ch}}%
         \addcontentsline{toc}{section}{\FMCuse{ch}}%
-        \input{translation/AUTHOR_LAST/\arabic{chap}.tex}%
+        \input{translations/AUTHORLAST/\arabic{chap}.tex}%
     }
 
 \end{document}
