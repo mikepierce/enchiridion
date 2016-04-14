@@ -1,7 +1,7 @@
 
 # The Enchiridion of Epictetus
 
-> The Enchiridion or Manual of Epictetus ... is a short manual of Stoic ethical advice 
+> The Enchiridion or Manual of Epictetus &#8230; is a short manual of Stoic ethical advice 
   compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
 
 > <p align="right">
