@@ -1,8 +1,9 @@
 
 # The Enchiridion of Epictetus
 
-> The Enchiridion or Manual of Epictetus &#8230; is a short manual of Stoic ethical advice 
-  compiled by Arrian, a 2nd-century disciple of the Greek philosopher Epictetus. 
+> The Enchiridion or Manual of Epictetus &#8230; 
+  is a short manual of Stoic ethical advice compiled by Arrian, 
+  a 2<sup>nd</sup>-century disciple of the Greek philosopher Epictetus. 
 
 > <p align="right">
 >   - <a href=https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus>Wikipedia</a>
@@ -40,6 +41,11 @@ along with a link to an online source for each:
 
 # ToDo
  
+ - Add running headers.
+ - Be more mindful of page proportions.
+ - Use XeLaTeX and change to a period appropriate typeface.
+ - Be more creative with section titles.
+ - Be more creative with titlepage and coverpage.
  - Be open to suggestions/recommendations/requests.
 
 
