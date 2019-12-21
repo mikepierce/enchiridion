@@ -43,9 +43,9 @@ along with a link to an online source for each:
  
  - Add running headers.
  - Be more mindful of page proportions.
- - Use XeLaTeX and change to a period appropriate typeface.
+ - Change to a period appropriate, or just better, typeface.
  - Be more creative with section titles.
- - Be more creative with titlepage and coverpage.
+ - Be more creative with titlepage and coverpage. In particular, scope on [these](http://www.gutenberg.org/wiki/Mathematics_(Bookshelf)) for ideas. 
  - Be open to suggestions/recommendations/requests.
 
 
