@@ -1,13 +1,10 @@
 
 # The Enchiridion of Epictetus
 
-> The Enchiridion or Manual of Epictetus &#8230; 
-  is a short manual of Stoic ethical advice compiled by Arrian, 
-  a 2<sup>nd</sup>-century disciple of the Greek philosopher Epictetus. 
-
-> <p align="right">
->   - <a href=https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus>Wikipedia</a>
-> </p>
+The *Enchiridion*, or *Manual*, of Epictetus &#8230; 
+is a short manual of Stoic ethical advice compiled by Arrian, 
+a 2<sup>nd</sup>-century disciple of the Greek philosopher Epictetus
+(see [Wikipedia](https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus)).
 
 This projects presents the Enchiridion set in LaTeX as a pdf ebook.
 
@@ -41,12 +38,9 @@ along with a link to an online source for each:
 
 # ToDo
  
- - Add running headers.
- - Be more mindful of page proportions.
  - Change to a period appropriate, or just better, typeface.
- - Be more creative with section titles.
- - Be more creative with titlepage and coverpage. In particular, scope on [these](http://www.gutenberg.org/wiki/Mathematics_(Bookshelf)) for ideas. 
- - Be open to suggestions/recommendations/requests.
+ - Be more creative with section titles, the titlepage, and the coverpage.
+ - Be open to suggestions/recommendations/requests. :)
 
 
 

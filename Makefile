@@ -1,11 +1,8 @@
-
 ###############################################################################
 #   Mike Pierce (mapierce271@gmail.com)
 #   The Enchiridion of Epictetus
 #   Makefile (LaTeX)
 ###############################################################################
-
-
 
 MAIN = main
 POST = post
@@ -14,7 +11,6 @@ JOB = enchiridion
 BOOKSDIR = all-versions
 COMPILER = pdflatex
 OPTIONS = -file-line-error -halt-on-error -jobname $(JOB)
-
 
 
 all : carter

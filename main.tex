@@ -1,75 +1,82 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Mike Pierce (mapierce271@gmail.com)
 %   The Enchiridion of Epictetus
 %   main.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\documentclass[12pt]{article}
+\usepackage{fourier}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{%
+     margin=1in%
+    ,left=0.67in%
+    ,right=0.67in%
+    ,paperwidth=6in%
+    ,paperheight=9in%
+}
+\usepackage{wallpaper}
+\usepackage{xcolor}
+    \definecolor{LinkBlue}{HTML}{1122BB}
+\usepackage{relsize}
+\usepackage{setspace}
+\usepackage{forloop}
+\usepackage{fmtcount}
+\usepackage[bookmarks]{hyperref}
+\hypersetup{%
+     pdfauthor={Mike Pierce}%
+    ,pdftitle={The Enchiridion - AUTHORLAST}%
+    ,pdfsubject={The Enchiridion of Epictetus}%
+    ,pdfproducer={LaTeX using hyperref}%
+    ,pdfcreator={pdfLaTeX from TeXLive}%
+    ,pdfkeywords={Epictetus,Enchiridion,AUTHORLAST,Stoic,Stoicism}%
+    ,hidelinks=true%
+    ,pdfpagemode=UseOutlines%
+}
+\usepackage{fancyhdr}
+\cfoot{\thepage}
+\lhead{\textsc{Enchiridion}}
+\usepackage{enumitem}
+\setlist{%
+     topsep=0em%
+    ,itemsep=0em%
+    ,parsep=1em%
+    ,itemindent=0pt%
+    ,leftmargin=18pt%
+    ,rightmargin=0pt%
+}
+\usepackage{parskip}
+\usepackage[all]{nowidow}
+\linespread{1.167}
+\frenchspacing
 
-
-    \documentclass[12pt]{article}
-    \usepackage{fourier}
-    \usepackage[%
-         margin=1in%
-        ,left=.8in%
-        ,right=.8in%
-        ,paperwidth=6in%
-        ,paperheight=9in%
-    ]{geometry}
-    \usepackage{wallpaper}
-    \usepackage{xcolor}
-        \definecolor{LinkBlue}{HTML}{1122BB}
-    \usepackage{datetime}
-        \newdateformat{dmy}{\THEDAY~\shortmonthname[\THEMONTH]~\THEYEAR}
-    \usepackage{setspace}
-    \usepackage{forloop}
-    \usepackage{fmtcount}
-    \usepackage{microtype}
-    \usepackage[bookmarks]{hyperref}
-    \hypersetup{%
-         pdfauthor={Mike Pierce}%
-        ,pdftitle={The Enchiridion - AUTHORLAST}%
-        ,pdfsubject={The Enchiridion of Epictetus}%
-        ,pdfproducer={LaTeX using hyperref}%
-        ,pdfcreator={pdfLaTeX from TeXLive}%
-        ,pdfkeywords={Epictetus,Enchiridion,AUTHORLAST,Stoic,Stoicism}%
-        ,hidelinks=true%
-        ,pdfpagemode=UseOutlines%
-    }
-    \widowpenalty7500
-    \clubpenalty7500
-    \tolerance=500
-    \setlength{\parskip}{10pt plus 1pt minus 1pt}
-    \setlength{\parindent}{0pt}
-    \linespread{1.167}
-    \frenchspacing
-
-    \newcommand{\AuthorFull}{AUTHORFULL}
-    \newcommand{\email}{%
-        \href{mailto:mapierce271@gmail.com}%
-             {\textcolor{LinkBlue}{mapierce271@gmail.com}}%
-    }
-    \newcommand{\github}{%
-        \href{https://github.com/mikepierce/Enchiridion}%
-             {\textcolor{LinkBlue}{github.com/mikepierce/Enchiridion}}%
-    }
-    \renewenvironment{quote}{\small\list{}{\rightmargin\leftmargin}\item\relax}
-
+\newcommand{\AuthorFull}{AUTHORFULL}
+\newcommand{\email}{%
+    \href{mailto:mapierce271@gmail.com}%
+    {\textcolor{LinkBlue}{mapierce271@gmail.com}}%
+}
+\newcommand{\github}{%
+    \href{https://github.com/mikepierce/Enchiridion}%
+    {\textcolor{LinkBlue}{github.com/mikepierce/Enchiridion}}%
+}
+\renewenvironment{quote}{\small\list{}{\rightmargin\leftmargin}\item\relax}
 
 
 \begin{document}
 
-    \include{coverpage}
+\include{coverpage}
 
-    \include{titlepage}
+\include{titlepage}
 
-    \newcounter{chap}
-    \forloop{chap}{1}{\value{chap}<53}{%
-        \storeNumberstring{ch}{chap}%
-        \section*{\FMCuse{ch}}%
-        \addcontentsline{toc}{section}{\FMCuse{ch}}%
-        \input{translations/AUTHORLAST/\arabic{chap}.tex}%
-    }
+\pagestyle{fancy}
+\newcounter{chap}
+\forloop{chap}{1}{\value{chap}<53}{%
+    \storeNumberstring{ch}{chap}%
+    \section*{\FMCuse{ch}}%
+    \addcontentsline{toc}{section}{\FMCuse{ch}}%
+    \input{translations/AUTHORLAST/\arabic{chap}.tex}%
+}
 
 \end{document}
 
