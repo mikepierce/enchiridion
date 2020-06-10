@@ -1,5 +1,7 @@
-
 # The Enchiridion of Epictetus
+
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-orange)](https://www.buymeacoffee.com/mpierce)
 
 The *Enchiridion*, or *Manual*, of Epictetus &#8230; 
 is a short manual of Stoic ethical advice compiled by Arrian, 
@@ -35,12 +37,8 @@ along with a link to an online source for each:
   [rolleston-source]: http://www.letsreadgreek.com/epictetus/rolleston.htm
 
 
-
 # ToDo
  
- - Change to a period appropriate, or just better, typeface.
- - Be more creative with section titles, the titlepage, and the coverpage.
- - Be open to suggestions/recommendations/requests. :)
-
-
+ - Set the whole text in a *period appropriate* typeface.
+ - Add more creative ornamentation to the cover, title page, and chapter headings.
 
