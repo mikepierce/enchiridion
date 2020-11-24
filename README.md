@@ -35,10 +35,3 @@ along with a link to an online source for each:
   [long-source]: http://www.ptypes.com/enchiridion.html
   [rolleston-file]: https://raw.githubusercontent.com/mapierce271/Enchiridion/master/all-versions/enchiridion-rolleston.pdf
   [rolleston-source]: http://www.letsreadgreek.com/epictetus/rolleston.htm
-
-
-# ToDo
- 
- - Set the whole text in a *period appropriate* typeface.
- - Add more creative ornamentation to the cover, title page, and chapter headings.
-
