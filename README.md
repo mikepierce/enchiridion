@@ -1,8 +1,5 @@
 # The Enchiridion of Epictetus
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-orange)](https://www.buymeacoffee.com/mpierce)
-
 The *Enchiridion*, or *Manual*, of Epictetus &#8230; 
 is a short manual of Stoic ethical advice compiled by Arrian, 
 a 2<sup>nd</sup>-century disciple of the Greek philosopher Epictetus
